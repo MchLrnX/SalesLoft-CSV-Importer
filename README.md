@@ -36,35 +36,34 @@ Follow the instructions for your operating system and processor:
 
 ### 2. Clone the repository:
 
-```bash
-git clone https://github.com/your_username/salesloft_csv_importer.git
+git clone https://github.com/MchLrnX/salesloft_csv_importer.git
+
 3. Navigate to the project directory:
-bash
-Copy code
+
 cd salesloft_csv_importer
+
 4. Create a new Conda environment with Python 3.9:
-bash
-Copy code
+
 conda create -n salesloft_csv_importer python=3.9
+
 5. Activate the new environment:
-bash
-Copy code
+
 conda activate salesloft_csv_importer
+
 6. Install the required packages:
-bash
-Copy code
+
 pip install -r requirements.txt
+
 7. Add your SalesLoft username and password to the .env file:
 makefile
-Copy code
+
 USERNAME=your_salesloft_username
 PASSWORD=your_salesloft_password
 Make sure to replace your_salesloft_username and your_salesloft_password with your actual SalesLoft credentials.
 
 8. Run the application:
-bash
-Copy code
 python app.py
+
 The application will be available at http://127.0.0.1:5000/ in your web browser.
 
 Usage
@@ -77,15 +76,13 @@ To make it easy to launch the application with a double-click, you can create a 
 Windows
 Create a new text file and name it
 "launch_salesloft_csv_importer.bat".
+
 2. Open the file and add the following lines:
 
 @echo off
 conda activate salesloft_csv_importer
 python app.py
 pause
-
-csharp
-Copy code
 
 3. Save the file and double-click it to launch the application.
 
@@ -98,8 +95,8 @@ Copy code
 #!/bin/bash
 source activate salesloft_csv_importer
 python app.py
+
 Save the file and make it executable with the following command:
-bash
-Copy code
 chmod +x launch_salesloft_csv_importer.sh
+
 Double-click the file to launch the application.
